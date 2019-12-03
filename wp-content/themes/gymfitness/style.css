@@ -200,8 +200,9 @@ hr {
         font-size: 3rem;
         color: var(--blanco);
     }
-    .menu-toggle .menu-principal .current_page_item {
+    .menu-principal .current_page_item {
         background-color: var(--colorPrimario);
+        border-bottom: none;
     }
     .menu-toggle:before {
         content: '';
