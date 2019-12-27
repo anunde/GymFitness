@@ -40,6 +40,7 @@ function gymfitness_scripts_styles() {
     //Encolado de recursos.
     wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css', array(), '8.0.1');
     wp_enqueue_style('googleFont', 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900|Staatliches&display=swap', array(), '1.0.0');
+    wp_enqueue_style('lightboxCSS', get_template_directory_uri().'/css/lightbox.min.css', array(), '2.11.0');
     //hoja de estilos principal
     wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', 'googleFont'), '1.0.0');
 
@@ -47,6 +48,8 @@ function gymfitness_scripts_styles() {
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('custom_script');
+    wp_enqueue_script('lightboxJS', get_stylesheet_uri().'/js/lightbox.min.css', array('jquery'), '2.11.0');
+
 }
 
 //Definir Zona de Widgets
